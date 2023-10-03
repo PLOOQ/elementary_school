@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Escuela Primaria Urbana 16 de Septiembre</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-<body>
+<body class='bg-light'>
 
     <section id='NavBarSection'>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-primary-subtle">
             <div class="container-fluid">
             <a class="navbar-brand" href="#">Escuela Primaria <br/> Urbana 16 de septiembre</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,33 +21,29 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#AboutSection">Acerca</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                      Más Información
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Contáctenos</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Síganos en redes sociales</a></li>
                     </ul>
                 </li>
                 </ul>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
             </div>
         </nav>
     </section>
 
-    <section id='CarouselSection' class=''>
+    <section id='Hero' class="">
+
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -87,46 +84,61 @@
         </div>
     </section>
 
-    <section id='AccordionSection'>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+    <section id='AboutSection' class='p-5'>
+
+      <div id='AboutContainer' class='p-5'>
+        <p class='display-6'> Sobre nosotros <h1/>
+        <p class="lead"> 
+          La Escuela Primaria Urbana 16 de septiembre, tiene como sede oficial en C. Fco. González Bocanegra 
+          S/N Col. La Providencia, de la Ciudad y Puerto de Acapulco, Guerrero. A través de su fundación 
+          que data aproximadamente más de cuatro décadas. Tiempo que ha estado al servicio de la sociedad 
+          formando generaciones de estudiantes que continúan activamente su nivel de estudios de educación básica. 
+          La educación que imparte la escuela es humanista, inclusiva, respeta la dignidad de sus miembros de la comunidad 
+          escolar, la enseñanza es integral en vinculación con otros saberes, experiencias, tradiciones culturales, sociales, 
+          artísticas y deportivas. La comunidad como núcleo integrador de los procesos de enseñanza y aprendizajes. 
+          <p/>
+      </div>
+
+      <div class='row container-fluid'>
+        <div id='AboutContainer' class='col-6 p-3'>
+            <p class="lead"> 
+              Así mismo, se propicia el respeto a la diversidad y la búsqueda activa de la equidad y la inclusión de las niñas y niños.
+              Las habilidades socioemocionales que desarrollamos son clave para la comunicación, el autoconocimiento, el pensamiento 
+              crítico y la responsabilidad social son fundamentales para el cuidado de la salud física, mental y emocional, así como 
+              del medio ambiente de la vida de los estudiantes en diferentes contextos áulico, escolar y comunitario.
+              <p/>
+          </div>
+
+        <div id="AccordionContainer" class="accordion col-6" >
+
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Accordion Item #1
+                  VALORES
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div id="panelsStayOpen-collapseOne" data-bs-parent="#AccordionContainer" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p>Actualmente la escuela a través del liderazgo académico de su directivo perpetuando el código de ética y código de valores que caracteriza al personal que labora y que se transmite permanentemente a sus estudiantes haciendo patente: la empatía, ya que, al ponernos en el lugar de otras personas en lo cognitivo y emocional, mejoramos la capacidad para resolver conflictos y entender las opiniones de los demás.  La igualdad de oportunidades, la honestidad, la humildad, el cuidado de la salud, la responsabilidad, el respeto, la gratitud, la solidaridad, la justicia, la democracia, la fraternidad y la tolerancia.</p>
                 </div>
               </div>
             </div>
+
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Accordion Item #2
+                  PRINCIPIOS
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div id="panelsStayOpen-collapseTwo" data-bs-parent="#AccordionContainer" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <p>Los principios que nos son propio como escuela y que nos guían en el funcionamiento organizacional son practicados por todos los miembros de la comunidad académica de la Institución, constituyéndose en la base de nuestra cultura; y tienen su fundamento en la Nueva Escuela Mexicana (NEM).</p>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
+
           </div>
-    </section>
+      </section>
       
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
